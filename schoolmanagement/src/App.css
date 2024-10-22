@@ -1,0 +1,214 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Navbar Css */
+#Navbar{
+  width: 100%;
+  position: fixed;
+  top:0;
+  height:70px;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  z-index: 2;
+}
+#logo{
+  width: 23%;
+  /* border: solid 2px; */
+}
+#logo>div{
+  width: 130px;
+  height: 100%;
+  margin-left: 100px;
+  /* border: solid 2px; */
+}
+#logo>div>img{
+  height: 100%;
+  width: 100%;
+}
+#pages{
+  width: 75%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 2px; */
+}
+#page{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: solid 2px; */
+}
+#page>div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-right: 25px;
+  /* border: solid 1px; */
+}
+#c-hovered{
+    position:absolute;
+    top :71px;
+    left:23%;
+    background-color : white;
+    max-width: 500px;
+    /* border :solid 1px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#heading{
+  font-weight: 500;
+}
+#c-hovered>.courses-sections{
+  margin: 5px 0px;
+  padding: 10px 0 10px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* border: solid 2px; */
+}
+#c-hovered>.courses-sections:hover{
+  color: #007bff;
+  background-color:#f0fbff;
+}
+#page>div>p{
+  font-size: 17px;
+  font-weight: 400;
+  /* border: solid 1px; */
+}
+#page>div>i{
+  font-size: 15px;
+  margin-left: 4px;
+  /* border: solid 1px; */
+}
+#search{
+  width: 45%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* border: solid 2px; */
+}
+#search>input{
+  height: 40px;
+  width: 250px;
+  font-size: 15px;
+  padding-left: 8px;
+  margin-left:35px;
+  border-radius: 4px ;
+  /* border: solid 1px; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#search>input::placeholder{
+  font-weight: 500;
+  color: rgb(46, 42, 42);
+}
+#users{
+  display: flex;
+  align-items: center;
+  justify-content:start ;
+  /* border: solid 2px; */
+}
+#users>i{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media(max-width: 1100px){
+  #page{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #Navbar{
+    justify-content: space-between;
+    height:70px;
+    /* border: solid 2px red; */
+  }
+  #pages{
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+
+  }
+  #logo{
+    width: 150px;
+    /* border: solid 2px blue; */
+  }
+  #logo>div{
+    width: 130px;
+    height: 100%;
+    margin-left: 30px;
+    /* border: solid 2px; */
+  }
+  #users{
+    margin-right: 15px;
+  }
+  #users>i{
+    font-size: 20px;
+  }
+}
+
+/* Form Css */
+#formInput{
+  height: 40px;
+  min-width: 250px;
+  font-size: 15px;
+  padding: 0 8px 0 8px;
+  margin: 10px 0px;
+  border-radius: 4px ;
+  /* border: solid 1px; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#formSubmit{
+  margin-top: 8px;
+  font-size: 15spx;
+  border: solid 2px;
+  border-radius: 4px;
+  padding: 3px 15px;
+}
+
+
+
+
+
+
+
+/* Sidebaar css */
+#Sidebar{
+  width: 241px;
+  height: 100vh;
+  margin-left: 1px;
+  background-color: rgba(21, 34, 89,1);
+}
+#s-logo-title{
+  width:100%;
+  height: 170px;
+  border: solid 1px white;
+}
+#s-logo{
+  width: 130px;
+  height: 100px;
+  margin: auto;
+}
+#s-logo>img{
+  height: 100%;
+  width: 100%;
+}
+#s-title{
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: solid 1px;
+  text-align: center;
+}
+.sections{
+  display: flex;
+  justify-content: space-around;
+}
+.text,.icons{
+  font-size: 15px;
+  color: red;
+}
+
